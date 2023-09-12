@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .center {
+    text-align: center;
+    color: #fff;
+    font-size: 3.1em;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 0s steps(40, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+  
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  padding: 20px 20px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.nav-menu {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  padding: 0px 20px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; 
+}
+.nav-link::after { 
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; /* Adjust the value to control the distance of the underline from the text */ 
+    width: 100%; 
+    height: 2px; 
+    background-color: #F1C93B; 
+    transform: scaleX(0); /* Initial scale of 0 to hide the underline */ 
+    transform-origin: left; 
+    transition: transform 0.3s ease-in-out; 
+  } 
+   
+  nav a:hover::after { 
+    transform: scaleX(1); /* Scale to 1 on hover to show the underline */ 
+  }
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
+  padding-left: 40px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 990px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.about-section.row{   
+  background-color: #F4EEE0;
+  padding: 5% 15%; 
+  font-size: 1.3rem;
+  margin-top: 30%;
+
+}
+.about-section img{
+  width: 300px;
+  border-radius: 100%;
+}
+.about-section p{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.our-service{
+  background-color: #6D5D6E; 
+  padding: 5% 15%;
+  text-align: center;
+  color: white;
+}
+.our-service img{
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 30px;
+
+  
+}
+.our-service p {
+  text-align: left;
+  margin-top: 30px;
+}
+.testimonials{
+  background-color: #4F4557;
+  padding: 5% 15%;
+  text-align: center;
+  color: #fff;
+}
+.testimonials p, em{
+  font-size: 1.3rem;
+}
+.testimonials img{
+  width: 60px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.footer{
+  background-color: #393646;
+}
+.footer .sm-logo, p{
+  text-align: center;
+  justify-content: center;
+  
+}
+.footer img{
+  width: 70px;
+  padding: 15px;  
+}
+.footer p{
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+  
+@media(max-width:990px) {
+  .about-section{
+    text-align: center;
+    justify-content: center;
+  }
+}

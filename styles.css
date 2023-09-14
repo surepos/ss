@@ -229,7 +229,7 @@ a {
 }
   
 @media(max-width:990px) {
-  .about-section{
+  .about-section {
     text-align: center;
     justify-content: center;
   }

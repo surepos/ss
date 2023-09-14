@@ -218,13 +218,14 @@ a {
   
 }
 .footer img{
-  width: 70px;
+  width: 65px;
   padding: 15px;  
 }
 .footer p{
   color: #fff;
   margin-bottom: 0;
   margin-top: 10px;
+  padding-bottom: 15px;
 }
   
 @media(max-width:990px) {

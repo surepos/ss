@@ -200,6 +200,7 @@ a {
   padding: 5% 15%;
   text-align: center;
   color: #fff;
+  width: 100vw;
 }
 .testimonials p, em{
   font-size: 1.3rem;
@@ -211,6 +212,7 @@ a {
 }
 .footer{
   background-color: #393646;
+  width: 100vw;
 }
 .footer .sm-logo, p{
   text-align: center;
@@ -218,8 +220,8 @@ a {
   
 }
 .footer img{
-  width: 60px;
-  padding: 15px;  
+  width: 65px;
+  padding: 10px;  
 }
 .footer p{
   color: #fff;
